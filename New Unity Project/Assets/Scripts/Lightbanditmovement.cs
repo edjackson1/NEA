@@ -27,7 +27,7 @@ public class Lightbanditmovement : MonoBehaviour
 		}
 		else
 		{
-			rb.velocity = new Vector2(0, 0); 
+			rb.velocity = new Vector2(0, 0);
 		}
 	}
 }
