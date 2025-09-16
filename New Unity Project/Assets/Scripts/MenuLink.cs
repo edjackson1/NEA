@@ -26,13 +26,6 @@ public class MenuLink : MonoBehaviour
 		Application.Quit();
 	}
 
-	public void PauseGame()
-	{
-		if (Input.GetKey(KeyCode.Escape))
-		{
-			SceneManager.LoadSceneAsync("Menu");
-		}
-	}
 
 }
 
