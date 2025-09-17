@@ -54,6 +54,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Lightbandit.cs" />
+     <Compile Include="Assets\Scripts\Lightbanditmovement.cs" />
+     <Compile Include="Assets\Scripts\MenuLink.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
@@ -72,6 +74,7 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="UnityEditor.StandardEvents">
+<<<<<<< HEAD
  <HintPath>H:/GitHub/NEA/New Unity Project/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
@@ -82,6 +85,18 @@
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>H:/GitHub/NEA/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+=======
+ <HintPath>H:/GitHub/NEA PROJECT/NEA project/NEA/New Unity Project/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>H:/GitHub/NEA PROJECT/NEA project/NEA/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>H:/GitHub/NEA PROJECT/NEA project/NEA/New Unity Project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>H:/GitHub/NEA PROJECT/NEA project/NEA/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+>>>>>>> 65da183bc96b25f8cf85d9d8b86948c03b868ef9
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
