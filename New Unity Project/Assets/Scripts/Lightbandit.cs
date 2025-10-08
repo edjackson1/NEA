@@ -31,7 +31,25 @@ public class Lightbandit : MonoBehaviour
 		{
 			MyAnimator.SetBool("run", false);
 		}
+		
+		if(Input.GetKey(KeyCode.Mouse0))
+		{
+			MyAnimator.SetBool("attack", true);
+		}
+		else
+		{
+			MyAnimator.SetBool("attack", false);
+		}
 
+	}
+
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		Enemy enemyComponent = collision.gameObject.GetComponent<Enemy>();
+		if(enemyComponent != null)
+		{
+			enemyComponent.TakeDamage(1);
+		}
 	}
 	
 	

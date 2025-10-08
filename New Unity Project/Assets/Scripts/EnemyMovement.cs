@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
 	private SpriteRenderer spriteRenderer;
 	public float movSpeed; // setting the movement speed to 3
 	public string direction; // setting the direction of the enemy
+	public int lives; //sets the lives as a variable to an integer
 	// Use this for initialization
 	
 	void Start()
