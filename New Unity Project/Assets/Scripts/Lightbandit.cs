@@ -32,23 +32,23 @@ public class Lightbandit : MonoBehaviour
 			MyAnimator.SetBool("run", false);
 		}
 		
-		if(Input.GetKey(KeyCode.Mouse0))
+		if(Input.GetKey(KeyCode.Mouse0)) //when left click is pressed
 		{
-			MyAnimator.SetBool("attack", true);
+			MyAnimator.SetBool("attack", true); //play the attack animation 
 		}
 		else
 		{
-			MyAnimator.SetBool("attack", false);
+			MyAnimator.SetBool("attack", false); //don't play attack animation 
 		}
 
 	}
 
-	private void OnCollisionEnter2D(Collision2D collision)
+	private void OnCollisionEnter2D(Collision2D collision) // creating a new void for when my sprite collides with the object
 	{
-		Enemy enemyComponent = collision.gameObject.GetComponent<Enemy>();
-		if(enemyComponent != null)
+		Enemy enemyComponent = collision.gameObject.GetComponent<Enemy>(); //it retrieves the script from the Enemy script
+		if(enemyComponent != null) //if the enemy component is not equal to null
 		{
-			enemyComponent.TakeDamage(1);
+			enemyComponent.TakeDamage(1); // the enemy will take 1 damage
 		}
 	}
 	
