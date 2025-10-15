@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
-	[SerializeField] float health, maxHealth = 3f;
+	[SerializeField] int health, maxHealth = 3;
 
 	// Use this for initialization
 	void Start () {
 		health = maxHealth;
 	}
 
-	public void TakeDamage(float damageAmount)
+	public void TakeDamage(int damageAmount)
 	{
 		health -= damageAmount;
 
