@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour {
-	public TextMeshPro Health;
 	[SerializeField] int health, maxHealth = 5;
 
 	// Use this for initialization
