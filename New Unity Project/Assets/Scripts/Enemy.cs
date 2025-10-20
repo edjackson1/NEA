@@ -5,6 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 	[SerializeField] int health, maxHealth = 3;
 	[SerializeField] EnemyHealth healthBar;
+	public int damage;
+	public LightBanditHealth LBH;
 	// Use this for initialization
 
 	private void Health()
@@ -28,8 +30,11 @@ public class Enemy : MonoBehaviour {
 		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	public void OnCollisionEnter2D(Collision2D collision){
+		if(collision.gameObject.tag == "Player")
+		{
+			LBH.TakeDamage(damage);
+		}
 	}
 }
+	
