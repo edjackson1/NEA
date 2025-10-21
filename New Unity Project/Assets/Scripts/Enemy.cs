@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour {
 	[SerializeField] EnemyHealth healthBar;
 	public int damage;
 	public LightBanditHealth LBH;
+	public bool damagePlayer = false;
 	// Use this for initialization
 
 	private void Health()
@@ -30,11 +31,25 @@ public class Enemy : MonoBehaviour {
 		}
 	}
 	
-	public void OnCollisionEnter2D(Collision2D collision){
-		if(collision.gameObject.tag == "Player")
+	private void OnCollisionEnter2D(Collision2D collision)
 		{
-			LBH.TakeDamage(damage);
+			if(collision.gameObject.CompareTag ("Player") && damagePlayer)
+			if(LBH != null)
+				{
+					LBH.TakeDamage(1);
+					Debug.Log("Player took damage");
+				}
 		}
+	
+	public void damagePlayerOn()
+	{
+		damagePlayer = true;
 	}
+
+	public void damagePlayerOff()
+	{
+		damagePlayer = false;
+	}
+
 }
 	
