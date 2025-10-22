@@ -1,13 +1,14 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LightBanditHealth : MonoBehaviour {
 	
-	[SerializeField] int playerHealth, maximumHealth = 5;
+	public int playerHealth, maximumHealth = 5;
 
 	
-	void Start(){
+	void Start()
+	{
 		playerHealth = maximumHealth;
 	}
 	// Update is called once per frame
@@ -19,7 +20,9 @@ public class LightBanditHealth : MonoBehaviour {
 			Destroy (gameObject);
 		}
 	}
-	void Update () {
-		
+	
+	public void Heal(int healAmount) //making new function to add health to my lightbandit
+	{
+		playerHealth += healAmount; //will heal the player health by the healAmount 
 	}
 }

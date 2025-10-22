@@ -5,7 +5,6 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 	[SerializeField] int health, maxHealth = 3;
 	[SerializeField] EnemyHealth healthBar;
-	public int damage;
 	public LightBanditHealth LBH;
 	public bool damagePlayer = false;
 	// Use this for initialization

@@ -45,7 +45,6 @@ public class Lightbandit : MonoBehaviour
 		} 
 	
 	
-	
 		public void DamageEnemy() //so it can be used on the animation timeline
 	{
 				if(enemyComponent != null) //if the enemy component is not equal to null
@@ -55,6 +54,6 @@ public class Lightbandit : MonoBehaviour
 						enemyComponent = null; //stops the enemy from taking damage more than once
 					}
 	}
-}
 
+}
 

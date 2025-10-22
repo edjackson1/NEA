@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\heal.cs" />
      <Compile Include="Assets\Scripts\Lightbandit.cs" />
      <Compile Include="Assets\Scripts\LightBanditHealth.cs" />
      <Compile Include="Assets\Scripts\Lightbanditmovement.cs" />
