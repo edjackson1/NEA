@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour 
 {
 	private SpriteRenderer spriteRenderer;
+	private CapsuleCollider2D capsuleCollider;
 	public float movSpeed; // setting the movement speed to 3
 	public string direction; // setting the direction of the enemy
 	public int lives; //sets the lives as a variable to an integer
@@ -17,6 +18,7 @@ public class EnemyMovement : MonoBehaviour
 			direction = "right"; // setting the direction to thee right
 			movSpeed = 1f; //setting movement speed to the right
 			spriteRenderer = GetComponent<SpriteRenderer>(); //gets the spriteRenderer components currently ticked etc
+			capsuleCollider = GetComponent<CapsuleCollider2D>();
 	}
 		
 		
@@ -54,15 +56,15 @@ public class EnemyMovement : MonoBehaviour
 		
 		}
 
-			if (direction ==  "left")
+			if (direction ==  "left") //if the sprite is facing the left direction
 		{
-			spriteRenderer.flipX = true;
+			spriteRenderer.flipX = true; //set the spriterender flip x to true
+			capsuleCollider.offset = new Vector2(0.1853044f,-0.1831309f); //change the offset of the capsule collider to 0.1853044f,-0.1831309f
 		}
 		else if (direction == "right")
 		{
-			spriteRenderer.flipX = false;
+			spriteRenderer.flipX = false; //set the spriterender flip x to false
+			capsuleCollider.offset = new Vector2(-0.1853044f,-0.1831309f); //change the offset of the capsule collider to -0.1853044f,-0.1831309f
 		}
 	}
 }
-
-
