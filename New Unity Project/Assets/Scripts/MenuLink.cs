@@ -24,6 +24,11 @@ public class MenuLink : MonoBehaviour
 	{
 		SceneManager.LoadSceneAsync("EndScreen"); //loads the end screen
 	}
+
+	public void TutorialScreen() //enables you to make the button interactable / lead you places
+	{
+		SceneManager.LoadSceneAsync("Tutorial"); //loads the tutorial screen
+	}
 	
 	public void QuitGame() //enables you to make the button interactable / lead you places
 	{
