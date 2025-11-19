@@ -1,25 +1,28 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour {
-	[SerializeField] int health, maxHealth = 5;
-
-	// Use this for initialization
-	void Start () {
-		health = maxHealth;
-	}
+public class LightBanditHealth : MonoBehaviour {
 	
+	public int playerHealth, maximumHealth = 5;
+
+	
+	void Start()
+	{
+		playerHealth = maximumHealth;
+	}
 	// Update is called once per frame
 	public void TakeDamage(int damageAmount)
 	{
-		health -= damageAmount;
+		playerHealth -= damageAmount;
 
-		if (health <= 0) {
+		if (playerHealth <= 0) {
 			Destroy (gameObject);
 		}
 	}
-	void Update () {
-		
+	
+	public void Heal(int healAmount) //making new function to add health to my lightbandit
+	{
+		playerHealth += healAmount; //will heal the player health by the healAmount 
 	}
 }
