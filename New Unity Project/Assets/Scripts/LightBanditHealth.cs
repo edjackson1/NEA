@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LightBanditHealth : MonoBehaviour {
 	
@@ -18,6 +19,7 @@ public class LightBanditHealth : MonoBehaviour {
 
 		if (playerHealth <= 0) {
 			Destroy (gameObject);
+			SceneManager.LoadSceneAsync("EndScreen");
 		}
 	}
 	

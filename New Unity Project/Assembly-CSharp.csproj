@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\LightBanditHealth.cs" />
      <Compile Include="Assets\Scripts\Lightbanditmovement.cs" />
      <Compile Include="Assets\Scripts\MenuLink.cs" />
+     <Compile Include="Assets\Scripts\Music.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
