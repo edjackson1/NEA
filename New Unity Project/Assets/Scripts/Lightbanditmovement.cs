@@ -43,4 +43,17 @@ public class Lightbanditmovement : MonoBehaviour
 		{
 			movSpeed += speedAmount; //will change the players speed by the speedAmount 
 		} 
+
+  	public IEnumerator decreaseSpeed()
+	{
+
+	Speed(-2); //decrease players movement speed by 2
+	Debug.Log ("Player's speed decreased"); //creates a debug to let me know if the players movement speed is being decreased
+
+	yield return new WaitForSeconds (5f);
+	//pauses code for 5 seconds
+
+	Speed(2); //adds 2 to the speed
+	Debug.Log ("Player's speed returned to normal"); //displays in the console that speed is returned to normal
 	}
+}

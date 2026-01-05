@@ -9,12 +9,13 @@ public Lightbanditmovement LBM;
 
 	private void OnTriggerEnter2D(Collider2D collision) //will cause a trigger when colliding with the debuff
 	{
-		if (collision.CompareTag ("Player")) { //if the gameObject with the tag "Player collides"
-			LBM.Speed(-2); //decrease players movement speed by 2
-			Debug.Log ("Player's speed decreased"); //creates a debug to let me know if the players movement speed is being decreased
-			Destroy (gameObject); //will destroy the debuff so it can not be used more than once.
-
-
+		if (collision.CompareTag ("Player")) //if the gameObject with the tag "Player collides"
+		{ 
+			Lightbanditmovement LightBandit = collision.GetComponent<Lightbanditmovement> (); //allows the code to be reached from the LightBanditmovement script
+			LightBandit.StartCoroutine (LightBandit.decreaseSpeed ()); //starts the coroutine called decreaseSpeed
+			Destroy (gameObject); //destroys the debuff preventing it from being used again
 		}
 	}
+		
 }
+
