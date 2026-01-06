@@ -27,4 +27,9 @@ public class LightBanditHealth : MonoBehaviour {
 	{
 		playerHealth += healAmount; //will heal the player health by the healAmount 
 	}
+
+	public void Damage(int damageAmount) //making new function to take health from my lightbandit
+	{
+		playerHealth -= damageAmount; //will damage the player by the damageAmount 
+	}
 }
